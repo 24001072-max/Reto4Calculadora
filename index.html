@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora básica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="calculadora">
+    <h1>Calculadora básica</h1>
+    <input type="text" id="pantalla" readonly>
+
+    <div class="botones">
+      <!-- Fila 1 -->
+      <button onclick="agregar('7')">7</button>
+      <button onclick="agregar('8')">8</button>
+      <button onclick="agregar('9')">9</button>
+      <button onclick="agregar('/')">÷</button>
+
+      <!-- Fila 2 -->
+      <button onclick="agregar('4')">4</button>
+      <button onclick="agregar('5')">5</button>
+      <button onclick="agregar('6')">6</button>
+      <button onclick="agregar('*')">×</button>
+
+      <!-- Fila 3 -->
+      <button onclick="agregar('1')">1</button>
+      <button onclick="agregar('2')">2</button>
+      <button onclick="agregar('3')">3</button>
+      <button onclick="agregar('-')">−</button>
+
+      <!-- Fila 4 -->
+      <button onclick="agregar('0')">0</button>
+      <button onclick="limpiar()">C</button>
+      <button onclick="calcular()">=</button>
+      <button onclick="agregar('+')">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
